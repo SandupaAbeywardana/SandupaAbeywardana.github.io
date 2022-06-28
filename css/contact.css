@@ -1,5 +1,7 @@
 body {
   background-image: url("../images/background.png");
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat !important;
 }
 
 .topnav {
@@ -238,4 +240,51 @@ body {
 
 .contact-container .contact-info .contact-box .contact-text a:hover {
 	color: #0070CF;
+}
+
+.contact-form {
+	width: 90%;
+	margin: 0;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 2vw 4vw;
+	width: 90%;
+	max-width: 600px;
+	border-radius: 10px;
+}
+
+form h3 {
+	color: #555;
+	font-weight: 800;
+	margin-bottom: 20px;
+}
+
+form input, form textarea {
+	border: 0;
+	margin: 10px 0;
+	padding: 20px;
+	outline: none;
+	background: #f5f5f5;
+	font-size: 16;
+}
+
+form button {
+	padding: 15px;
+	background: #e43;
+	color: #fff;
+	font-size: 18px;
+	outline: none;
+	border: 0;
+	cursor: pointer;
+	width: 150px;
+	margin: 20px auto 0;
+	border-radius: 30px;
 }
