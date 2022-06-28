@@ -39,7 +39,7 @@ body {
 .float-container {
   display: inline-block;
   padding: 10px;
-  margin-left: 60px;
+  margin-left: 100px;
 }
 
 .float-child {
@@ -171,4 +171,62 @@ body {
 
 .face-button:hover .face-primary {
     margin-top: -40px;
+}
+
+.contact-container {
+	width: 500px;
+	height: 420px;
+	display: flex;
+	background: rgba(255,255,255,0.75);
+	padding-top: 20px;
+	margin-left: 200px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+.contact-container .contact-info {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-container .contact-info .contact-box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+
+.contact-container .contact-info .contact-box .contact-icon {
+	width: 40px;
+	height: 40px;
+	background: #000A4A;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	font-size: 18px;
+	margin-top: 5px;
+}
+
+.contact-container .contact-info .contact-box .contact-text {
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #000A4A;
+	flex-direction: column;
+	font-weight: 300px;
+	text-align: left;
+}
+
+.contact-container .contact-info .contact-box .contact-text h3 {
+	font-weight: 400px;
+	padding: 0;
+	margin: 0;
+}
+
+.contact-container .contact-info .contact-box .contact-text p {
+	padding: 0;
+	margin-top: 5px;
 }
