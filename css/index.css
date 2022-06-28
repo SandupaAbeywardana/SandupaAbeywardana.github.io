@@ -49,6 +49,10 @@ body {
 	display: inline-block;
 }
 
+.self-image {
+	margin-top: -80px;
+}
+
 h1 {
 	color: white;
 }
