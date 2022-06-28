@@ -31,7 +31,7 @@ body {
 }
 
 .topnav a.active:hover {
-  background-color: #000000;
+  background-color: rgba(0,0,0,0);
   color: #ffffff;
   border-radius: 0px;
 }
