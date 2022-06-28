@@ -1,12 +1,12 @@
 body {
-	background-image: url("../images/background.png");
+  background-image: url("../images/background.png");
 }
 
 .topnav {
-    overflow: hidden;
-	float: right;
-	padding-right: 50px;
-	padding-top: 25px;
+  overflow: hidden;
+  float: right;
+  padding-right: 50px;
+  padding-top: 25px;
 }
 
 .topnav a {
@@ -31,102 +31,143 @@ body {
 }
 
 .topnav a.active:hover {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   color: #ffffff;
   border-radius: 0px;
 }
 
 .float-container {
-	display: inline-block;
-	padding: 10px;
-	margin-left: 60px;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 60px;
 }
 
 .float-child {
-    width: 45%;
-	padding: 0 20 20 20;
-	text-align: center;
-    float: left;
-	display: inline-block;
-	align-items: center;
-	justify-content: center;
+  width: 45%;
+  padding: 0 20 20 20;
+  text-align: center;
+  float: left;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-container {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 
 .card {
-	width: 750px;
-	perspective: 1000px;
-	cursor: pointer;
+  width: 350px;
+  perspective: 1000px;
+  cursor: pointer;
 }
 
 .card-inner {
-	position: relative;
-	width: 100%;
-	text-align: center;
-	transform-style: preserve-3d;
-	transition: transform 1s;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 1s;
 }
 
 .front-face {
-	backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .front-face img {
-	width: 100%;
-	border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .back-face {
-	backface-visibility: hidden;
-	background: linear-gradient(325deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-	color: #fff;
-	padding: 15px;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	border-radius: 10px;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	transform: rotateY(180deg);
+  backface-visibility: hidden;
+  background: linear-gradient(325deg, #020024 0%, #090979 35%, #00d4ff 100%);
+  color: #fff;
+  padding: 15px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transform: rotateY(180deg);
 }
 
 .back-face h2 {
-	font-size: 40px;
-	margin-top: 10px;
-	font-weight: 600;
+  font-size: 40px;
+  margin-top: 10px;
+  font-weight: 600;
 }
 
 .back-face p {
-	font-size: 22px;
-	font-weight: 300;
+  font-size: 22px;
+  font-weight: 300;
 }
 
 .social-media i {
-	color: #fff;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	font-size: 18px;
-	background: #000A4A;
-	border: 2px solid white;
-	border-radius: 50%;
-	margin: 15px 6px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  background: #000A4A;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 15px 6px;
+}
+
+.social-media i:hover {
+  color: #000A4A;
+  background: #fff;
+  border: 2px solid #000A4A;
 }
 
 .card:hover .card-inner {
-	transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.face-button {
+  height: 40px;
+  display: inline-block;
+  border: 3px solid #e43;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: #e43;
+  overflow: hidden;
+  margin-top: -1px;
+}
+
+.face-button .icon {
+	margin-right: 6px;
+}
+
+.face-button .face-primary,
+.face-button .face-secondary {
+    display: block;
+    padding: 0 20px;
+    line-height: 40px;
+    transition: margin .4s;
+}
+
+.face-button .face-primary {
+    background-color: #e43;
+    color: #fff;
+}
+
+.face-button:hover .face-primary {
+    margin-top: -40px;
 }
