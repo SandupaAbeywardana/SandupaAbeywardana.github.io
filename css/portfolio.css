@@ -48,13 +48,3 @@ body {
     float: left;
 	display: inline-block;
 }
-
-h1 {
-	color: white;
-}
-
-p {
-	color: white;
-	font-size: 18px;
-	line-height: 30px;
-}
