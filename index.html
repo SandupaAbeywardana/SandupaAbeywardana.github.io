@@ -1,57 +1,646 @@
 <!doctype html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Home</title>
-	
-	<script TYPE="text/javascript">
-		function popup(mylink, windowname)
-		{
-			if (! window.focus)return true;
-			var href;
-			if (typeof(mylink) == 'string')
-			   href=mylink;
-			else
-			   href=mylink.href;
-			window.open(href, windowname, 'width=650,height=700,scrollbars=yes');
-			return false;
-		}
-	</script>
-</head>
+<html lang="en">
+	<head>
 
-<body>
-<div class="topnav">
-		<a class="active" href="#">Me</a>
-  		<a href="html/portfolio.html">Portfolio</a>
-  		<a href="html/contact.html">Contact</a>
-   		<!--<a href="">Buy Me a Coffee</a>-->
-		<a
-  		 	HREF="https://www.paypal.com/donate/?hosted_button_id=L23QAZELLCU3E" 
-  			onClick="return popup(this, 'Buy Me a Coffee')">Buy Me a Coffee</a>
-   	</div>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
 
-	<div class="float-container">
-		<div class="float-child">
-			<img class="self-image" src="images/64d386536b34d0224469873417a89c16.jpg" alt="self-portrait" height="auto" width="420px">
-		</div>
+		<title>Sandupa Abeywardana</title>
 		
-		<div class="float-child">
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<h1>About Me</h1>
-			<p>A vibrant individual with extensive experience in multimedia, web development, UI/UX design, social media marketing, and print design. Exceptional collaborative and interpersonal skills; dynamic team player with well-developed written and verbal communication abilities.</p>
+		<!-- ===== CSS Files ===== -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/skins/color-1.css">
+		<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+		<!-- ===== Style Switcher ===== -->
+		<link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+		<link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+		<link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+		<link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+		<link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+		<link rel="stylesheet" href="css/style-switcher.css">
 		
-			<p>Equipped with the ability to escalate brand awareness by utilizing skills gained in the creative industry, being able to identify opportunities, overcome objections, build long-term mutually beneficial relationships with vendors, workforce, and clients, establishing a successful and lucrative company.</p>
+	</head>
+
+	<body onload="load()">
+
+		<!-- ===== Main Container Start ===== -->
+		<div class="main-container">
+			<!-- ===== Aside Start ===== -->
+			<div class="aside">
+				<div class="logo">
+					<a href="#"><span>P</span>ortfolio</a>
+				</div>
+				<div class="nav-toggler">
+					<span></span>
+				</div>
+				<ul class="nav">
+					<li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+					<li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+					<li><a href="#services"><i class="fa fa-list"></i> Services</a></li>
+					<li><a href="http://bit.ly/saworkportfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+					<li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+					<li><a href="https://www.paypal.com/donate/?hosted_button_id=L23QAZELLCU3E"><i class="fa fa-mug-hot"></i> Buy me a Coffee</a></li>
+					<!--
+						<li><a href="https://www.paypal.com/donate/?hosted_button_id=L23QAZELLCU3E" 
+						onClick="return popup(this, 'Buy Me a Coffee')"><i class="fa fa-mug-hot"></i> Buy me a Coffee</a></li>
+						-->
+				</ul>
+			</div>
+			<!-- ===== Aside End ===== -->
+			<!-- ===== Main Content Start ===== -->
+			<div class="main-content">
+				<!-- ===== Home Section Start ===== -->
+				<section class="home active section" id="home">
+					<div class="container">
+						<div class="row">
+							<div class="home-info padd-15">
+								<h3 class="hello">Hello, my name is <span class="name">Sandupa Abeywardana</span></h3>
+								<h3 class="my-profession">I'm a <span class="typing">web designer</span></h3>
+								<p>Currently reading for my Bachelor's at the Sri Lanka Institute of Information Technology under the field of Information Technology. I have the potential ability in graphic designing, photography, videography, editing, web designing, digital content creation and social media marketing.<br><br>Feel free to contact me anytime. Look forward to working with you!</p>
+								<a href="files/Isum Sandupa Abeywardana - Curriculum Vitae.pdf" download class="btn">Download CV</a>
+								<a href="#contact" data-section-index="0" class="btn hire-me">Hire Me</a>
+							</div>
+							<div class="home-img padd-15">
+								<img src="images/Self-Portrait.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- ===== Home Section End ===== -->
+				<!-- ===== About Section Start ===== -->
+				<section class="about section" id="about">
+					<div class="container">
+						<div class="row">
+							<div class="section-title padd-15">
+								<h2>About Me</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="about-content padd-15">
+								<div class="row">
+									<div class="about-text padd-15">
+										<h3>I'm Sandupa Abeywardana and <span>Web Developer</span></h3>
+										<p>A vibrant individual with extensive experience in multimedia, web development, UI/UX design, social media marketing, and print design. Exceptional collaborative and interpersonal skills; dynamic team player with well-developed written and verbal communication abilities. Equipped with the ability to escalate brand awareness by utilizing skills gained in the creative industry, being able to identify opportunities, overcome objections, build long-term mutually beneficial relationships with vendors, workforce, and clients, establishing a successful and lucrative company.</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stats-skills padd-15">
+										<div class="stat-info">
+											<div class="stat-box">
+												<i class="uil uil-award stat-icon"></i>
+												<span class="stat-subtitle">Years of Experiance</span>
+												<h3 class="stat-title"><p id="0101"></p>+</h3>
+											</div>
+											<div class="stat-box">
+												<i class="uil uil-suitcase-alt stat-icon"></i>
+												<span class="stat-subtitle">Projects Completed</span>
+												<h3 class="stat-title"><p id="0102"></p>+</h3>
+											</div>
+											<div class="stat-box">
+												<i class="uil uil-users-alt stat-icon"></i>
+												<span class="stat-subtitle">Satisfied Clients</span>
+												<h3 class="stat-title"><p id="0103"></p>+</h3>
+											</div>
+										</div>
+										<div class="soft-info">
+											<h4 class="padd-15">Language Skills</h4>
+											<div class="skill-item padd-15">
+												<h5>English</h5>
+												<div class="progress">
+													<div class="progress-in" style="width: 78%;"></div>
+													<div class="skill-percent">78%</div>
+												</div>
+											</div>
+											<div class="skill-item padd-15">
+												<h5>Sinhala</h5>
+												<div class="progress">
+													<div class="progress-in" style="width: 90%;"></div>
+													<div class="skill-percent">90%</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="soft-skills padd-15">
+										<div class="row">
+											<h4 class="padd-15">Soft Skills</h4>
+											<div class="skill-item padd-15">
+												<h5>Leadership</h5>
+												<div class="progress">
+													<div class="progress-in" style="width: 85%;"></div>
+													<div class="skill-percent">85%</div>
+												</div>
+											</div>
+											<div class="skill-item padd-15">
+												<h5>Teamwork</h5>
+												<div class="progress">
+													<div class="progress-in" style="width: 72%;"></div>
+													<div class="skill-percent">72%</div>
+												</div>
+											</div>
+											<div class="skill-item padd-15">
+												<h5>Communication</h5>
+												<div class="progress">
+													<div class="progress-in" style="width: 63%;"></div>
+													<div class="skill-percent">63%</div>
+												</div>
+											</div>
+											<div class="skill-item padd-15">
+												<h5>Problem Solving</h5>
+												<div class="progress">
+													<div class="progress-in" style="width: 80%;"></div>
+													<div class="skill-percent">80%</div>
+												</div>
+											</div>
+											<div class="skill-item padd-15">
+												<h5>Flexibility/Adaptability</h5>
+												<div class="progress">
+													<div class="progress-in" style="width: 52%;"></div>
+													<div class="skill-percent">52%</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="education padd-15">
+										<h3 class="title">Education</h3>
+										<div class="row">
+											<div class="timeline-box padd-15">
+												<div class="timeline shadow-dark">
+													<!-- ===== Timeline Item ===== -->
+													<div class="timeline-item">
+														<div class="circle-dot"></div>
+														<h3 class="timeline-date">
+															<i class="fa fa-calendar"></i> 2021 - 2025 (Reading)
+														</h3>
+														<h4 class="timeline-title">BSc (Hons) in Information Technology
+															Specialising in Cyber Security</h4>
+														<h5 class="timeline-subtitle">Sri Lanka Institute of Information Technology</h5>
+														<p class="timeline-text"></p>
+													</div>
+													<!-- ===== Timeline Item ===== -->
+													<div class="timeline-item">
+														<div class="circle-dot"></div>
+														<h3 class="timeline-date">
+															<i class="fa fa-calendar"></i> 2021
+														</h3>
+														<h4 class="timeline-title">International Advanced Level (IAL)</h4>
+														<h5 class="timeline-subtitle">Horizon College International</h5>
+														<p class="timeline-text">Physical Science Stream<br>&emsp;Information and Communications Technology - A<br>&emsp;Physics - B<br>&emsp;Mathematics - C</p>
+													</div>
+													<!-- ===== Timeline Item ===== -->
+													<div class="timeline-item">
+														<div class="circle-dot"></div>
+														<h3 class="timeline-date">
+															<i class="fa fa-calendar"></i> 2019
+														</h3>
+														<h4 class="timeline-title">International General Certificate of Secondary Education (IGCSE)</h4>
+														<h5 class="timeline-subtitle">Horizon College International</h5>
+														<p class="timeline-text">Four ‘A’ Grades<br>Two ‘C’ Grades<br>One ‘D’ Grade<br><br><br><br><br>&nbsp;</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="experiance padd-15">
+										<h3 class="title">Experiance</h3>
+										<div class="row">
+											<div class="timeline-box padd-15">
+												<div class="timeline shadow-dark">
+													<!-- ===== Timeline Item ===== -->
+													<div class="timeline-item">
+														<div class="circle-dot"></div>
+														<h3 class="timeline-date">
+															<i class="fa fa-calendar"></i> 2018 - Present
+														</h3>
+														<h4 class="timeline-title">Digital Media Consultant - Freelance</h4>
+														<h5 class="timeline-subtitle">Colombo Media House</h5>
+														<p class="timeline-text">●&ensp;Graphic Designing<br>●&ensp;Photography<br>●&ensp;Videography<br>●&ensp;Video Editing<br>●&ensp;Social Media Management<br>●&ensp;UI / UX Designing<br>●&ensp;Web Designing and Development</p>
+													</div>
+													<!-- ===== Timeline Item ===== -->
+													<div class="timeline-item">
+														<div class="circle-dot"></div>
+														<h3 class="timeline-date">
+															<i class="fa fa-calendar"></i> 2020 - 2021
+														</h3>
+														<h4 class="timeline-title">Senior Editor</h4>
+														<h5 class="timeline-subtitle">Suranga Dancing Academy</h5>
+														<p class="timeline-text">●&ensp;Manage the Official Youtube Channel<br>●&ensp;Videography<br>●&ensp;Video Editing<br>●&ensp;Promote the Institution and Institution related activities</p>
+													</div>
+													<!-- ===== Timeline Item ===== -->
+													<div class="timeline-item">
+														<div class="circle-dot"></div>
+														<h3 class="timeline-date">
+															<i class="fa fa-calendar"></i> 2021
+														</h3>
+														<h4 class="timeline-title">Official Campus Ambassador | Intern</h4>
+														<h5 class="timeline-subtitle">International Model United Nations</h5>
+														<p class="timeline-text">●&ensp;Promote IMUN Online Conferences.<br>●&ensp;Inform the public about International Model United Nations conferences & How MUNs play an important role in learning different essentials skills like Negotiation Diplomacy, Leadership, etc.<br>●&ensp;Be a Brand Ambassador of International MUN and promote on social media as well as through different channels.<br>●&ensp;Assist in driving registrations for IMUN online Conferences.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="hard-skills padd-15">
+										<div class="skills-container">
+										<!--TODO: #5 Skills Tab and Content not responsive-->
+											<div class="skills-tab">
+												<!-- ===== Skill Header ===== -->
+												<div class="skills-header skills-active" data-target="#frontend">
+													<i class="uil uil-brackets-curly skills-icon"></i>
+
+													<div>
+														<h1 class="skills-title">Frontend Developer</h1>
+														<span class="skills-subtitle">HTML | CSS | Javascript</span>
+													</div>
+													<i class="uil uil-angle-down skills-arrow"></i>
+												</div>
+												<!-- ===== Skill Header ===== -->
+												<div class="skills-header" data-target="#design">
+													<i class="uil uil-swatchbook skills-icon"></i>
+
+													<div>
+														<h1 class="skills-title">UI / UX Design</h1>
+														<span class="skills-subtitle">Figma | Adobe XD | Adobe Photoshop</span>
+													</div>
+													<i class="uil uil-angle-down skills-arrow"></i>
+												</div>
+												<!-- ===== Skill Header ===== -->
+												<div class="skills-header" data-target="#backend">
+													<i class="uil uil-server-network skills-icon"></i>
+
+													<div>
+														<h1 class="skills-title">Backend Developer</h1>
+														<span class="skills-subtitle">C# | PHP | Python | Java | SQL</span>
+													</div>
+													<i class="uil uil-angle-down skills-arrow"></i>
+												</div>
+											</div>
+											<div class="skills-content">
+												<div class="skills-group skills-active" data-content id="frontend">
+													<div class="skills-list">
+														<!-- ===== Skills Item ===== -->
+														<div class="skills-data">
+															<div class="skills-titles">
+																<h3 class="skills-name">HTML</h3>
+																<span class="skills-number">93%</span>
+															</div>
+
+															<div class="skills-bar">
+																<span class="skills-percentage" style="width: 93%;"></span>
+															</div>
+														</div>
+														<!-- ===== Skills Item ===== -->
+														<div class="skills-data">
+															<div class="skills-titles">
+																<h3 class="skills-name">CSS</h3>
+																<span class="skills-number">72%</span>
+															</div>
+
+															<div class="skills-bar">
+																<span class="skills-percentage" style="width: 72%;"></span>
+															</div>
+														</div>
+														<!-- ===== Skills Item ===== -->
+														<div class="skills-data">
+															<div class="skills-titles">
+																<h3 class="skills-name">Javascript</h3>
+																<span class="skills-number">88%</span>
+															</div>
+
+															<div class="skills-bar">
+																<span class="skills-percentage" style="width: 88%;"></span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="skills-group" data-content id="design">
+													<div class="skills-list">
+														<!-- ===== Skills Item ===== -->
+														<div class="skills-data">
+															<div class="skills-titles">
+																<h3 class="skills-name">Figma</h3>
+																<span class="skills-number">52%</span>
+															</div>
+
+															<div class="skills-bar">
+																<span class="skills-percentage" style="width: 52%;"></span>
+															</div>
+														</div>
+														<!-- ===== Skills Item ===== -->
+														<div class="skills-data">
+															<div class="skills-titles">
+																<h3 class="skills-name">Adobe XD</h3>
+																<span class="skills-number">64%</span>
+															</div>
+
+															<div class="skills-bar">
+																<span class="skills-percentage" style="width: 64%;"></span>
+															</div>
+														</div>
+														<!-- ===== Skills Item ===== -->
+														<div class="skills-data">
+															<div class="skills-titles">
+																<h3 class="skills-name">Adobe Photoshop</h3>
+																<span class="skills-number">95%</span>
+															</div>
+
+															<div class="skills-bar">
+																<span class="skills-percentage" style="width: 95%;"></span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="skills-group" data-content id="backend">
+													<div class="skills-list">
+														<!-- ===== Skills Item ===== -->
+														<div class="skills-data">
+															<div class="skills-titles">
+																<h3 class="skills-name">C#</h3>
+																<span class="skills-number">49%</span>
+															</div>
+
+															<div class="skills-bar">
+																<span class="skills-percentage" style="width: 49%;"></span>
+															</div>
+														</div>
+														<!-- ===== Skills Item ===== -->
+														<div class="skills-data">
+															<div class="skills-titles">
+																<h3 class="skills-name">PHP</h3>
+																<span class="skills-number">76%</span>
+															</div>
+
+															<div class="skills-bar">
+																<span class="skills-percentage" style="width: 76%;"></span>
+															</div>
+														</div>
+														<!-- ===== Skills Item ===== -->
+														<div class="skills-data">
+															<div class="skills-titles">
+																<h3 class="skills-name">Python</h3>
+																<span class="skills-number">61%</span>
+															</div>
+
+															<div class="skills-bar">
+																<span class="skills-percentage" style="width: 61%;"></span>
+															</div>
+														</div>
+														<!-- ===== Skills Item ===== -->
+														<div class="skills-data">
+															<div class="skills-titles">
+																<h3 class="skills-name">Java</h3>
+																<span class="skills-number">55%</span>
+															</div>
+
+															<div class="skills-bar">
+																<span class="skills-percentage" style="width: 55%;"></span>
+															</div>
+														</div>
+														<!-- ===== Skills Item ===== -->
+														<div class="skills-data">
+															<div class="skills-titles">
+																<h3 class="skills-name">SQL</h3>
+																<span class="skills-number">86%</span>
+															</div>
+
+															<div class="skills-bar">
+																<span class="skills-percentage" style="width: 86%;"></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- ===== About Section End ===== -->
+				<!-- ===== Services Section Start ===== -->
+				<section class="service section" id="services">
+					<div class="container">
+						<div class="row">
+							<div class="section-title padd-15">
+								<h2>Services</h2>
+							</div>
+						</div>
+						<div class="row">
+							<!-- ===== Service Item Start ===== -->
+							<div class="service-item padd-15">
+								<div class="service-item-inner">
+									<div class="icon">
+										<i class="fa fa-mobile-alt"></i>
+									</div>
+									<h4>Web Design</h4>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, dolor!</p>
+								</div>
+							</div>
+							<!-- ===== Service Item End ===== -->
+							<!-- ===== Service Item Start ===== -->
+							<div class="service-item padd-15">
+								<div class="service-item-inner">
+									<div class="icon">
+										<i class="fa fa-laptop-code"></i>
+									</div>
+									<h4>Web Design</h4>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, dolor!</p>
+								</div>
+							</div>
+							<!-- ===== Service Item End ===== -->
+							<!-- ===== Service Item Start ===== -->
+							<div class="service-item padd-15">
+								<div class="service-item-inner">
+									<div class="icon">
+										<i class="fa fa-palette"></i>
+									</div>
+									<h4>Web Design</h4>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, dolor!</p>
+								</div>
+							</div>
+							<!-- ===== Service Item End ===== -->
+							<!-- ===== Service Item Start ===== -->
+							<div class="service-item padd-15">
+								<div class="service-item-inner">
+									<div class="icon">
+										<i class="fa fa-code"></i>
+									</div>
+									<h4>Web Design</h4>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, dolor!</p>
+								</div>
+							</div>
+							<!-- ===== Service Item End ===== -->
+							<!-- ===== Service Item Start ===== -->
+							<div class="service-item padd-15">
+								<div class="service-item-inner">
+									<div class="icon">
+										<i class="fa fa-search"></i>
+									</div>
+									<h4>Web Design</h4>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, dolor!</p>
+								</div>
+							</div>
+							<!-- ===== Service Item End ===== -->
+							<!-- ===== Service Item Start ===== -->
+							<div class="service-item padd-15">
+								<div class="service-item-inner">
+									<div class="icon">
+										<i class="fa fa-bullhorn"></i>
+									</div>
+									<h4>Web Design</h4>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, dolor!</p>
+								</div>
+							</div>
+							<!-- ===== Service Item End ===== -->
+						</div>
+					</div>
+				</section>
+				<!-- ===== Services Section End ===== -->
+				<!-- ===== Portfolio Section Start ===== -->
+				<section class="portfolio section" id="portfolio">
+					<div class="container">
+						<div class="row">
+							<div class="section-title padd-15">
+								<h2>Portfolio</h2>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- ===== Portfolio Section End ===== -->
+				<!-- ===== Contact Section Start ===== -->
+				<section class="contact section" id="contact">
+					<div class="container">
+						<div class="row">
+							<div class="section-title padd-15">
+								<h2>Contact Me</h2>
+							</div>
+						</div>
+						<h3 class="contact-title padd-15">Have You Any Questions ?</h3>
+						<h4 class="contact-subtitle padd-15">I'M AT YOUR SERVICE</h4>
+						<div class="row">
+							<!-- ===== Contact Info Item Start ===== -->
+							<div class="contact-info-item padd-15">
+								<div class="contact-info-box">
+									<div class="icon"><i class="fa fa-phone"></i></div>
+									<h4>Call Us On</h4>
+									<p>+94 76 791 2651<br>+94 70 761 2651</p>
+								</div>
+							</div>
+							<!-- ===== Contact Info Item End ===== -->
+							<!-- ===== Contact Info Item Start ===== -->
+							<div class="contact-info-item padd-15">
+								<div class="contact-info-box">
+									<div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+									<h4>Office</h4>
+									<p>163/17 Vimukthi Mw, Pittugala,<br>Malabe 10115, Sri Lanka.</p>
+								</div>
+							</div>
+							<!-- ===== Contact Info Item End ===== -->
+							<!-- ===== Contact Info Item Start ===== -->
+							<div class="contact-info-item padd-15">
+								<div class="contact-info-box">
+									<div class="icon"><i class="fa fa-envelope"></i></div>
+									<h4>Email</h4>
+									<p>sandupa.isum@gmail.com<br>sandupa.isum@outlook.com</p>
+								</div>
+							</div>
+							<!-- ===== Contact Info Item End ===== -->
+							<!--TODO: #3 Email and Website Text Contents not Responsive-->
+							<!-- ===== Contact Info Item Start ===== -->
+							<div class="contact-info-item padd-15">
+								<div class="contact-info-box">
+									<div class="icon"><i class="fa fa-globe-asia"></i></div>
+									<h4>Website</h4>
+									<p>www.SandupaAbeywardana.me<br>SandupaAbeywardana.github.io</p>
+								</div>
+							</div>
+							<!-- ===== Contact Info Item End ===== -->
+						</div>
+						<h3 class="contact-title padd-15">Send Me An Email</h3>
+						<h4 class="contact-subtitle padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+						<!-- ===== Contact Form Start ===== -->
+						<!--TODO: #4 Contact form JS not written-->
+						<div class="row">
+							<div class="contact-form padd-15">
+								<div class="row">
+									<div class="form-item col-6 padd-15">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Name">
+										</div>
+									</div>
+									<div class="form-item col-6 padd-15">
+										<div class="form-group">
+											<input type="email" class="form-control" placeholder="Email">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-item col-12 padd-15">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Subject">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-item col-12 padd-15">
+										<div class="form-group">
+											<textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-item col-12 padd-15">
+										<div class="form-group">
+											<button type="submit" class="btn">Send Message</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- ===== Contact Form End ===== -->
+					</div>
+				</section>
+				<!-- ===== Contact Section End ===== -->
+			</div>
+			<!-- ===== Main Content End ===== -->
 		</div>
-	</div>
-</body>
+		<!-- ===== Main Container End ===== -->
+
+		<!-- ===== Style Switcher Start ===== -->
+		<div class="style-switcher">
+			<div class="style-switcher-toggler style-icon">
+				<i class="fas fa-cog fa-spin"></i>
+			</div>
+			<div class="day-night style-icon">
+				<i class="fas "></i>
+			</div>
+			<h4>Theme Colors</h4>
+			<div class="colors">
+				<span class="color-1" onclick="setActiveStyle('color-1')"></span>
+				<span class="color-2" onclick="setActiveStyle('color-2')"></span>
+				<span class="color-3" onclick="setActiveStyle('color-3')"></span>
+				<span class="color-4" onclick="setActiveStyle('color-4')"></span>
+				<span class="color-5" onclick="setActiveStyle('color-5')"></span>
+			</div>
+		</div>
+		<!-- ===== Style Switcher End ===== -->
+		
+		<!-- ===== JS Files ===== -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+		<script src="js/script.js"></script>
+		<script src="js/style-switcher.js"></script>
+		
+	</body>
 </html>
