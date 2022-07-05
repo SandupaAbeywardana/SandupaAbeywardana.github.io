@@ -1,7 +1,7 @@
 /* ===== Typing Animation Start ===== */
 
 var typed = new Typed(".typing", {
-   strings:["Web Designer", "Web Developer", "Graphic Designer"],
+   strings:[" ", "Web Designer", "Web Developer", "Graphic Designer"],
    typeSpeed:100,
    backspeed:60,
    loop:true
@@ -46,9 +46,9 @@ let text1 = document.getElementById('0101');
 let text2 = document.getElementById('0102');
 let text3 = document.getElementById('0103');
 const load = () => {
-   animate(text1, 0, 48, 3000);
-   animate(text2, 0, 80, 3000);
-   animate(text3, 0, 25, 3000);
+   animate(text1, 0, 5, 3000);
+   animate(text2, 0, 20, 3000);
+   animate(text3, 0, 12, 3000);
 }
 
 /* ===== Stat Counter End ===== */
